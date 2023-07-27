@@ -1,0 +1,114 @@
+/* 
+robiłam blisko 2h
+jak zrobić żeby header się rozciągał i nie miał tego max 1300px jak cały container?? */
+
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+body{
+    background:linear-gradient(120deg, rgb(133, 184, 231), rgb(248, 248, 248));
+
+}
+
+.container{max-width:1300px; 
+margin:0 auto;}
+
+.container-content {
+    padding: 0.5em;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+header{
+    background: linear-gradient(120deg, rgb(62, 87, 197), rgb(125, 173, 170));
+    text-align: center;
+    overflow: hidden;
+    padding:0.6em 0.6em 2.2em;
+}
+
+.header-title{
+    font-size: 2.2rem;
+    color:rgb(16, 18, 139);
+    margin:0.5em 0 0.2em 0;
+}
+
+.header-text{
+font-size:1.2rem;
+color:rgb(191, 219, 243);
+margin-bottom: 2em;
+}
+
+.white{color: rgb(166, 208, 245);}
+
+
+
+li a{
+    text-decoration: none;
+    color: rgb(9, 25, 68);
+    font-weight: 600;
+    background-color: rgba(137, 186, 231, 0.5);
+    padding:0.7em;
+    border-radius: 10px;
+    display:block;
+}
+
+ul li{
+    list-style: none;
+    margin:0.4em;
+    text-align: center;
+}
+
+.section_one-title{
+    color: rgb(16, 18, 139);
+    padding:1em 0 0.5em 0;
+}
+
+.section_two-title{
+    color: rgb(16, 18, 139);
+    margin-bottom: 0.5em;
+}
+
+.img-snowboarder{
+    border-radius: 5px;
+}
+
+.section_one-text, .section_two-text{
+    margin:1em 0;
+    text-align:left;
+}
+
+button{
+    background-color: rgb(165, 231, 228);
+    padding:0.5em 2em;
+    border-radius: 10px;
+    border: 1px solid rgb(9, 51, 58);
+    background-color: rgba(77, 154, 173, 0.4);
+    margin-bottom:0.5em;
+    font-weight: 600;
+}
+
+
+
+@media (min-width: 950px){
+
+    header{
+        display:flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .container-content, header{
+        padding: 0 5em;
+    }
+
+    .img-snowboarder{
+        width:70%;
+    }
+
+    ul{
+        display:flex;
+    }
+}
